@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project for Grid</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="menu" class="side-menu">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#" class="closebtn" onclick="closeMenu()">&times</a>
+    </div>
+    <div class="grid-container">
+      <div class="item1">
+        <div class="header">
+          <div id="coffee">
+            <h3>
+              <span onclick="openMenu()" class="menu-icon"
+                ><i class="fa fa-bars" aria-hidden="true"></i
+              ></span>
+              coffee
+            </h3>
+          </div>
+          <div class="grid-item">
+            <a href="#" class="nav-link active">Home</a>
+          </div>
+          <div class="grid-item"><a href="#" class="nav-link">About</a></div>
+          <div class="grid-item"><a href="#" class="nav-link">Contact</a></div>
+        </div>
+        <div class="content">
+          <div class="container">
+            <h3>In need of</h3>
+            <h1>Coffee?</h1>
+            <button class="btn">Book</button>
+            <p>
+              Behind Every Successful Person is a <br />
+              substantial amount of coffee
+            </p>
+            <p>
+              Good Coffee Lorem ipsum dolor sit, amet consectetur <br />
+              adipisicing elit. Exercitationem, doloremque!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="item2">
+        <div class="content">
+          <p>
+            <span style="font-size: 2rem; opacity: none">1</span>/ 15
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </p>
+        </div>
+      </div>
+      <div class="item3">
+        <div class="icon">
+          <i class="fa fa-gift" aria-hidden="true"></i>
+        </div>
+        <div class="text"><p>*coffee20*</p></div>
+      </div>
+    </div>
+
+    <script>
+      const openMenu = () => {
+        document.getElementById("menu").style.width = "300px";
+      };
+      const closeMenu = () => {
+        document.getElementById("menu").style.width = "0px";
+      };
+    </script>
+  </body>
+</html>
